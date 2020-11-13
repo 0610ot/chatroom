@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+/*---Reset---*/
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+html {
+
+}
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+/*クラス定義*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-table;
+}
+
+
+/* Hides from IE-mac \*/
+* html .clearfix{height: 1%;}
+*+html .clearfix{min-height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*--- ページ基本デザイン ---*/
+
+.clearfix {
+  display: block;
+}
+
+#wrapper {
+  width: 100%;
+	background-image: url(../img/images.jpeg);
+	background-size: cover;
+	background-repeat : no-repeat;
+}
+
+#header {
+  border-bottom: 2px solid #bfbfbf;
+	width: 100%;
+}
+
+#header_main {
+	width: 720px;
+  margin: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#header_main a{
+	color:rgb(188, 17, 240);
+}
+
+#header_main h1{
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Lobster', cursive;
+}
+
+#header_manu {
+	max-width: 720px;
+	display: flex;
+	padding: 20px;
+}
+
+#header_manu ul li{
+	width: 230px;
+	margin: auto;
+	text-align: center;
+	color: black;
+	font-size: 20px;
+}
+
+#header_manu ul li:hover{
+	color: rgb(61, 128, 204);
+	background-color: #3a3a3a;
+}
+
+#main {
+	max-width: 720px;
+	padding-top: 60px;
+	display: flex;
+	margin: auto;
+}
+
+#main_btn {
+	width: 100%;
+	text-align: center;
+}
+
+#main_btn a h2{
+	font-size: 60px;
+	display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;
+  color: #668ad8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #627295;
+  border-radius: 3px;
+  font-weight: bold;
+  text-shadow: -1px -1px rgba(255, 255, 255, 0.44), 1px 1px rgba(0, 0, 0, 0.38);
+}
+
+#main_btn a h2.signup{
+	background: rgb(173, 66, 66);
+  color: rgb(173, 66, 66);
+	border-bottom: solid 3px rgb(163, 112, 112);
+}
+
+#footer {
+  margin-top: 60px;
+	padding-right: 40px;
+  border-top: 2px solid #bfbfbf;
+  width: 100%;
+}
+
+#footer p {
+  font-size: 12px;
+  text-align: right;
+  color: rgb(163, 112, 112);
+  padding: 10px;
+}
